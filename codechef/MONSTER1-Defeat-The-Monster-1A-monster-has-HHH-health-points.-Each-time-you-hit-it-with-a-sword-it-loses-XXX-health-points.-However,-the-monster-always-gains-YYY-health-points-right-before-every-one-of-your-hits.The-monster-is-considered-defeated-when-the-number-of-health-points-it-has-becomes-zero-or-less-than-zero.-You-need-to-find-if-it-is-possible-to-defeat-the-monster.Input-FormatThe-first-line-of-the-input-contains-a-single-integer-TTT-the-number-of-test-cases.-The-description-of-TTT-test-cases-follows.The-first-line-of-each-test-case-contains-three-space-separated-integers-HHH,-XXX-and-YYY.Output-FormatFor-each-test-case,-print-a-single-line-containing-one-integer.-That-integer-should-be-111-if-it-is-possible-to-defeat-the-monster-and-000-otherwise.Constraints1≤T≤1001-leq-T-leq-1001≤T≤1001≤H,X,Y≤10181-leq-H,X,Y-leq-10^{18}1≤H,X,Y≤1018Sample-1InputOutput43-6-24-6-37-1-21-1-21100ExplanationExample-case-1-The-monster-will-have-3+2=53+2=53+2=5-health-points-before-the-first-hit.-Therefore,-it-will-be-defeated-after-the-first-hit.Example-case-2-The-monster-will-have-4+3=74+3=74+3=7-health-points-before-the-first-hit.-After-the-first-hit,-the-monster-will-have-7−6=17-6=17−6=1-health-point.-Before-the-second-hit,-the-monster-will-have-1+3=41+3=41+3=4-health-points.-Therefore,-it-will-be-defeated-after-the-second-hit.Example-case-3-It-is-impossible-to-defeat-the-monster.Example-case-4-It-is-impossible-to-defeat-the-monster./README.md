@@ -1,4 +1,4 @@
-<h2><a href="https://www.codechef.com/practice/course/interview-dsa/DSAPREP_01/problems/MONSTER1?tab=Submissions">Defeat The Monster 1A monster has HHH health points. Each time you hit it with a sword it loses XXX health points. However, the monster always gains YYY health points right before every one of your hits.
+<h2><a href="https://www.codechef.com/practice/course/interview-dsa/DSAPREP_01/problems/MONSTER1?tab=solution">Defeat The Monster 1A monster has HHH health points. Each time you hit it with a sword it loses XXX health points. However, the monster always gains YYY health points right before every one of your hits.
 The monster is considered defeated when the number of health points it has becomes zero or less than zero. You need to find if it is possible to defeat the monster.
 
 Input Format
