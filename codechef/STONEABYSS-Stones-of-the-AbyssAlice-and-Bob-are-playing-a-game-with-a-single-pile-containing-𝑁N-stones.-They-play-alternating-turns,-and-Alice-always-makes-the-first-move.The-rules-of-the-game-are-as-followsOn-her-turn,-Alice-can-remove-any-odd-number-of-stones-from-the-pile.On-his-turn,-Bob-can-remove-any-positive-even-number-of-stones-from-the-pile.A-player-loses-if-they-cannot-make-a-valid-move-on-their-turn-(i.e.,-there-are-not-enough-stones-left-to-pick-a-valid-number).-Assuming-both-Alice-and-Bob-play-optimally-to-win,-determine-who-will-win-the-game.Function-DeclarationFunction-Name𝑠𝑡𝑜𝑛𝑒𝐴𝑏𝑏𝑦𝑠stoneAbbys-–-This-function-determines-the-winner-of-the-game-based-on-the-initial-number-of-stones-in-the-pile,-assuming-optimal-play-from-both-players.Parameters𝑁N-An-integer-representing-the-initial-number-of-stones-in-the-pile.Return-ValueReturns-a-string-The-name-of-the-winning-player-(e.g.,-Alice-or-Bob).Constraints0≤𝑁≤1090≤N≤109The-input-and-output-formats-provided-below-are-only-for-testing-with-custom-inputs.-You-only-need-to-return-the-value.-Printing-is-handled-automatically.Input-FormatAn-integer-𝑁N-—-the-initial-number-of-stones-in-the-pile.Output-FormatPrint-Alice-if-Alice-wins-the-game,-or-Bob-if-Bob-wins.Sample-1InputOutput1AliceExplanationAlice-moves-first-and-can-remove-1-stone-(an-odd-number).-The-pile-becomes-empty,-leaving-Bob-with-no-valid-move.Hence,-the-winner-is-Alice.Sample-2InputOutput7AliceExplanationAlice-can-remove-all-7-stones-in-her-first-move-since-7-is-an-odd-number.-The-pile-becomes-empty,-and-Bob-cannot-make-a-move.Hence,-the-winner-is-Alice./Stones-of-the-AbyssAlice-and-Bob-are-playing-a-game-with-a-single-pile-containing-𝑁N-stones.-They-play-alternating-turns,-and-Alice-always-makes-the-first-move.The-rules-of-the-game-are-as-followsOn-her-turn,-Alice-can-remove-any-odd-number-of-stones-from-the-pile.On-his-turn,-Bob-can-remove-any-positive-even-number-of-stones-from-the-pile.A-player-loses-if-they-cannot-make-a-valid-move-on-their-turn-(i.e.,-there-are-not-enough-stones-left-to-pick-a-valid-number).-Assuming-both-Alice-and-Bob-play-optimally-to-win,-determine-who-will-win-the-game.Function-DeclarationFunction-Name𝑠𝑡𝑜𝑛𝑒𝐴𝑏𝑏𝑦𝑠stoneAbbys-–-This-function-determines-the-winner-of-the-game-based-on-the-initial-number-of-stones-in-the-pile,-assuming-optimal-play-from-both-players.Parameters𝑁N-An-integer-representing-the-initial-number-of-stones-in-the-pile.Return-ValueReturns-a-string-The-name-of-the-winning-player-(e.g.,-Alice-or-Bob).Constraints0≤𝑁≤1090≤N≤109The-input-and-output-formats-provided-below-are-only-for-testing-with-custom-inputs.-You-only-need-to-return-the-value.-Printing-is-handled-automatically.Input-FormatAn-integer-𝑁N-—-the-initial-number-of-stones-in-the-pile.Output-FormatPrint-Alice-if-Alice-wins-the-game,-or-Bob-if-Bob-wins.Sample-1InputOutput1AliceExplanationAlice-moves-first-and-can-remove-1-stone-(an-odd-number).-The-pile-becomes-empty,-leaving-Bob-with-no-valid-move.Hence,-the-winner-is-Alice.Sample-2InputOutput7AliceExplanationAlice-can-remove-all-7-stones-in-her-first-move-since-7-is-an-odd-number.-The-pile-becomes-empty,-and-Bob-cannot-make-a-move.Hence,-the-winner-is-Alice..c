@@ -1,8 +1,6 @@
 string stoneAbbys(int N){
-    if(N%2==1){
-        return "Alice";
-    }
-    else{
+    if(N == 0){
         return "Bob";
     }
+    return "Alice";
 }
