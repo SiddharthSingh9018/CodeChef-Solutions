@@ -1,0 +1,1 @@
+string reverseWords(string s) {    stringstream ss(s);    vector<string> words;    string word;        while(ss>>word){        words.push_back(word);    }    string NewS;    for(int i=words.size()-1;i>=0;i--){        NewS += words[i];    if(i!=0){        NewS+=" ";    }    }    return NewS;}
