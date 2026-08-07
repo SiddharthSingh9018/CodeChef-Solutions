@@ -6,7 +6,7 @@ int recurse(int n,vector<int>& arr,int target,vector<vector<int>>&memo){
     if(n==0){
         return false;
     }
-    if(memo[n-1]!=-1){
+    if(memo[n-1][target]!=-1){
         return memo[n-1][target];
     }
     int sum=0;
