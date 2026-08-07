@@ -1,5 +1,5 @@
 
-int recurse(int n,vector<int>& arr,int target,vector<int> memo){
+int recurse(int n,vector<int>& arr,int target,vector<int>&memo){
     if(target==0){
         return true;
     }
