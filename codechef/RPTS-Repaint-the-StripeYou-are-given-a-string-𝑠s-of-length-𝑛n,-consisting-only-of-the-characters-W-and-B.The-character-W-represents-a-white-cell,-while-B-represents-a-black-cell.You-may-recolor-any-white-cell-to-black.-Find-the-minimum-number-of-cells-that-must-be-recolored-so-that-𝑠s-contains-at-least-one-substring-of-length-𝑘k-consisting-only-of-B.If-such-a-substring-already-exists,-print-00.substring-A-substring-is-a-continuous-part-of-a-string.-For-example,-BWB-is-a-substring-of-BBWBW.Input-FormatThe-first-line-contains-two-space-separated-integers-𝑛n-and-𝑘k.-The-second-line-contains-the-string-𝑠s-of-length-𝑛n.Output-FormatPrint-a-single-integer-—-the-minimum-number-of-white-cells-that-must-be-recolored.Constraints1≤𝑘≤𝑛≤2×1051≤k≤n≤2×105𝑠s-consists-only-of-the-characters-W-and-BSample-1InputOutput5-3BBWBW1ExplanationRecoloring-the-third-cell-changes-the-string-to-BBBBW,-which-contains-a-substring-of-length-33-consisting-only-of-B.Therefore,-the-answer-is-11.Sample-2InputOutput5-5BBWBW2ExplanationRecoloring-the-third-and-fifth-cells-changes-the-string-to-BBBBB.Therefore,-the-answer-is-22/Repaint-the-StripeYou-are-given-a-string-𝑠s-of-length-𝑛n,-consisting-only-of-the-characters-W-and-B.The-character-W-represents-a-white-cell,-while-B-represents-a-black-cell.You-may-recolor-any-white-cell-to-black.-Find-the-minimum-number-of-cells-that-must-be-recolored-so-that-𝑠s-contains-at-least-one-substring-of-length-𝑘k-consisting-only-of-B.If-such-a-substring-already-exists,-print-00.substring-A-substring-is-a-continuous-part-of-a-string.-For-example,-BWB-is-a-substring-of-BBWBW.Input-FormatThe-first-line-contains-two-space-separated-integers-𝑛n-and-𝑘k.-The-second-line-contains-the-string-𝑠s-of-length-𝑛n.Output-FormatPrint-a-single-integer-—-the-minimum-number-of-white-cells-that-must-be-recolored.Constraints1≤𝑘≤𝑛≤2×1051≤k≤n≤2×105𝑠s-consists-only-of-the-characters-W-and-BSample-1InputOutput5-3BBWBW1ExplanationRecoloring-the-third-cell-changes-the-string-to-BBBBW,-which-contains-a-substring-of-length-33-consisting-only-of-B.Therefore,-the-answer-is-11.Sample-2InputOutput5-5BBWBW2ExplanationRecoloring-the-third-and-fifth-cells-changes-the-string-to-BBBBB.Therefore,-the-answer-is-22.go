@@ -12,16 +12,17 @@ int main() {
     int maxc=0;
     int l=0;
     for(int r=0;r<N;r++){
-        if(r<=K){
+        if(r<K){
             if(s[r]=='B'){
                 cntr++;
             }
             continue;
         }
-        l++;
+
         if(s[l]=='B'){
                 cntr--;
         }
+        l++;
         if(s[r]=='B'){
                 cntr++;
         }
