@@ -5,28 +5,35 @@ int main() {
 
     int N;
     int K;
-    cin>>N>>K;
-    std::string s;
-    std::cin>>s;
-    int cntr=0;
-    int maxc=0;
-    int l=0;
-    for(int r=0;r<N;r++){
-        if(r<K){
-            if(s[r]=='B'){
+    cin >> N >> K;
+    string s;
+    cin >> s;
+
+    int cntr = 0;
+    int maxc = 0;
+    int l = 0;
+
+    for (int r = 0; r < N; r++) {
+
+        if (r < K) {
+            if (s[r] == 'B') {
                 cntr++;
             }
             continue;
         }
 
-        if(s[l]=='B'){
-                cntr--;
+        if (s[l] == 'B') {
+            cntr--;
         }
+
         l++;
-        if(s[r]=='B'){
-                cntr++;
+
+        if (s[r] == 'B') {
+            cntr++;
         }
-        maxc = max(cntr,maxc);
+
+        maxc = max(cntr, maxc);
     }
-    cout<<max(0,K-maxc);
+
+    cout << max(0, K - maxc);
 }
