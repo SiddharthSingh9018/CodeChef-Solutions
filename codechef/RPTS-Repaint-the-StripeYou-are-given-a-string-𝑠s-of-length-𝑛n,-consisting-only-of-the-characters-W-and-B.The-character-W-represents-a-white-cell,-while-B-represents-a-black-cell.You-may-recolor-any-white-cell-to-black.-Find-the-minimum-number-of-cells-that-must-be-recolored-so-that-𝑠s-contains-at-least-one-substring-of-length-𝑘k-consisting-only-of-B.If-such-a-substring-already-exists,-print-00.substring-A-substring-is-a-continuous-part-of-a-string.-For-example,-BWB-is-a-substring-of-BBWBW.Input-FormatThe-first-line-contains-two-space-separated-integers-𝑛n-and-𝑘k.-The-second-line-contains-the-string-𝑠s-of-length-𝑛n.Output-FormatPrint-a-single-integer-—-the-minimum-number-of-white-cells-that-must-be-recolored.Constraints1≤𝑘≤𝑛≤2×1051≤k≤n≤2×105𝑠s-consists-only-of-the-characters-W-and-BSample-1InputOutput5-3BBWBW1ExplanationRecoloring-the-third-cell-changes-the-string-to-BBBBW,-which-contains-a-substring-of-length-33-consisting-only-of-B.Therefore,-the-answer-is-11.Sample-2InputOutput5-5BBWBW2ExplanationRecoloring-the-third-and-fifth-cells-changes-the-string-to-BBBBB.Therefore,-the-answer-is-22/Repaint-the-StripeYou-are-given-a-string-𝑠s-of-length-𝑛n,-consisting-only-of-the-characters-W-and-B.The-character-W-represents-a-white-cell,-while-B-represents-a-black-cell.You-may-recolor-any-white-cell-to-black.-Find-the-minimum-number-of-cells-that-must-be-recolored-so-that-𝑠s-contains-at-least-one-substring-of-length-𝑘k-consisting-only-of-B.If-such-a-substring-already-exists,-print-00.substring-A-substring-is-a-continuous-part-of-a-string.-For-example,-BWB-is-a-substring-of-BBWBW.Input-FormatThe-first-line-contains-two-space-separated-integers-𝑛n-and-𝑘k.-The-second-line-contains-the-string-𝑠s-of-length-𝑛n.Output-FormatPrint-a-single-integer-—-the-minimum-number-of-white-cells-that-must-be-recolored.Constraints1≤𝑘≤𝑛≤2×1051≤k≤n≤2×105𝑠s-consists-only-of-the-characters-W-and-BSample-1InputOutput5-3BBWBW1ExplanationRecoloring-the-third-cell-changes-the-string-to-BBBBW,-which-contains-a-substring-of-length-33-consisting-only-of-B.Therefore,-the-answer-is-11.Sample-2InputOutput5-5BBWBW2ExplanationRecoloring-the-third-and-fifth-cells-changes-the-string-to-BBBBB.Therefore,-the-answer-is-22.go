@@ -10,15 +10,22 @@ int main() {
     std::cin>>s;
     int cntr=0;
     int maxc=0;
+    int l=0;
     for(int r=0;r<N;r++){
-        if(s[r]!='B'){
-            cntr=0;
+        if(r<=K){
+            if(s[r]=='B'){
+                cntr++;
+            }
+            continue;
         }
-        else{
-            cntr++;
+        l++;
+        if(s[l]=='B'){
+                cntr--;
+        }
+        if(s[r]=='B'){
+                cntr++;
         }
         maxc = max(cntr,maxc);
     }
     cout<<max(0,K-maxc);
-
 }
